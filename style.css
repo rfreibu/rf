@@ -1,105 +1,77 @@
+/* Import fonts */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+:root {
+    --primary-text-color: #333;
+    --button-background: #f2f2f2;
+    --button-color: #333;
+    --button-border-radius: 5px;
+}
 
-html{
-  margin: 0 auto;
-  width: 100%;
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px; /* Prevents content from sticking to the viewport edges */
 }
-body{
-  margin: 0 auto;
-  padding-top: 100px;
-  box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
-  text-align: center;
-  justify-content: center;
+
+.card {
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff; /* A clean white background */
+    width: 100%; /* Makes the card expand horizontally */
+    max-width: 400px; /* Optimal width for mobile screens */
+    box-sizing: border-box;
 }
-.container{
-  height: 250px;
-  width: 250px;
-  overflow: hidden;
-  margin: 0 auto;
-  border-radius: 50%;
-  transition: all 0.3s ease-in-out;
-  background: linear-gradient(45deg, #333340, #3C3CA9);
+
+.profile-img img {
+    max-width: 150px; /* Optimized size for mobile */
+    border-radius: 50%;
 }
-.container:hover{
-  height: auto;
-  width: auto;
-  max-width: 320px;
-  border-radius: 10px;
-  box-shadow: 0px 1px 35px 0px rgba(0,0,0,0.3);
+
+.info h1 {
+    font-size: 1.5em; /* Larger, more readable text */
+    color: var(--primary-text-color);
+    margin: 10px 0;
 }
-.container .wrapper img{
-  position: relative;
-  z-index: 20;
-  border-radius: 50%;
-  display: block;
-  height: 200px;
-  width: 200px;
-  object-fit: cover;
-  margin: 20px auto;
-  transition: all 0.3s ease;
+
+.info .title, .info .location {
+    color: var(--primary-text-color);
+    margin: 5px 0;
 }
-.container:hover .wrapper img.active{
-  height: 470px;
-  width: 350px;
-  margin: 0px auto;
-  border: none;
-  border-radius: 5px;
+
+.contact-buttons {
+    margin-top: 20px;
 }
-.wrapper .title{
-  color: #fff;
-  font-size: 25px;
-  font-weight: 500;
-  padding: 10px;
-  line-height: 25px;
+
+.button {
+    display: inline-block; /* Align with other buttons */
+    padding: 12px 20px; /* Larger touch area */
+    text-decoration: none; /* Remove underline */
+    color: var(--button-color); /* Text color */
+    background-color: var(--button-background);
+    border-radius: var(--button-border-radius);
+    margin: 0 5px 10px; /* Spacing between buttons */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
 }
-.content{
-  color: #fff;
-  font-size: 17px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 1px 20px 10px 10px!important;
+
+.button span {
+    pointer-events: none; /* Avoid issues with icon clicks */
 }
-.content .place{
-  color: #fff;
-  font-size: 17px;
-  line-height: 0px;
-  margin: 0 auto;
-  
+
+.button:hover, .button:active {
+    background-color: #e6e6e6; /* Slightly darker background on press/hover */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on press/hover */
 }
-.content .buttons{
-  display: flex;
-  padding-top: 50px;
-  justify-content: center;
-}
-.buttons .btn{
-  height: 40px;
-  width: 100px;
-  margin: 0 5px;
-}
-.buttons .btn button{
-  height: 100%;
-  width: 100%;
-  background: #fff;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-size: 32px;
-  font-weight: 500;
-  border-radius: 5px;
-  transition: all 0.3s;
-}
-.btn button:hover{
-  transform: scale(0.95);
-}
-.fa-envelope{
-  color: #c71610;
-}
-.fa-linkedin{
-  color: #0072b1 ;
-}
-.fa-whatsapp{
-  color: #128C7E ;
+
+/* For the download button */
+.download-contact {
+    font-weight: bold; /* Make text bold to differentiate */
 }

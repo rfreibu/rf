@@ -8,34 +8,25 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <title>Tarjeta de Presentacion Rene Freiburghaus</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="wrapper">
-            <img src="rff.png" alt="">
-            <div class="title">Rene V. Freiburghaus</div>
+    <section class="card">
+        <div class="profile-img">
+            <img src="rff.png" alt="Rene V. Freiburghaus">
         </div>
-        <div class="content">
-            <p>
-                Data Analyst & Web Developer
-            </p>
-            <br>
-            <div class="place">Panama City, Panama</div>
-            <div class="buttons">
-                <div class="btn yahoo">
-                    <button onclick="document.location='mailto:rfreibu@gmail.com'"><span
-                            class="fa fa-envelope"></span></button>
-                </div>
-                <div class="btn whats">
-                    <button onclick="window.open('https://wa.me/50760914944','_blank')"><span
-                            class="fab fa-whatsapp"></span></a></button>
-                </div>
-                <div class="btn linked">
-                    <button
-                        onclick="window.open('//www.linkedin.com/in/rfreibur/ ','_blank')"><span
-                            class="fab fa-linkedin"></span></a></button>
-                </div>
+        <div class="info">
+            <h1>Rene V. Freiburghaus</h1>
+            <p class="title">Data Analyst & Web Developer</p>
+            <p class="location">Panama City, Panama</p>
+            <div class="contact-buttons">
+                <!-- Existing contact links -->
+                <a href="mailto:rfreibu@gmail.com" class="button email"><span class="fa fa-envelope"></span></a>
+                <a href="https://wa.me/50760914944" target="_blank" rel="noopener noreferrer" class="button whatsapp"><span class="fab fa-whatsapp"></span></a>
+                <a href="//www.linkedin.com/in/rfreibur/" target="_blank" rel="noopener noreferrer" class="button linkedin"><span class="fab fa-linkedin"></span></a>
+                <!-- New "Save to Contacts" button -->
+                <a href="RFreiburghaus.vcf" download class="button download-contact">Save to Contacts</a>
             </div>
         </div>
-    </div>
+    </section>
 </body>
 </html>
