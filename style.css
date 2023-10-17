@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+html{
+  margin: 0 auto;
+  width: 100%;
+}
+body{
+  margin: 0 auto;
+  padding-top: 100px;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  text-align: center;
+  justify-content: center;
+}
+.container{
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(45deg, #333340, #3C3CA9);
+}
+.container:hover{
+  height: auto;
+  width: auto;
+  max-width: 320px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 35px 0px rgba(0,0,0,0.3);
+}
+.container .wrapper img{
+  position: relative;
+  z-index: 20;
+  border-radius: 50%;
+  display: block;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin: 20px auto;
+  transition: all 0.3s ease;
+}
+.container:hover .wrapper img.active{
+  height: 470px;
+  width: 350px;
+  margin: 0px auto;
+  border: none;
+  border-radius: 5px;
+}
+.wrapper .title{
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px;
+  line-height: 25px;
+}
+.content{
+  color: #fff;
+  font-size: 17px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1px 20px 10px 10px!important;
+}
+.content .place{
+  color: #fff;
+  font-size: 17px;
+  line-height: 0px;
+  margin: 0 auto;
+  
+}
+.content .buttons{
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+}
+.buttons .btn{
+  height: 40px;
+  width: 100px;
+  margin: 0 5px;
+}
+.buttons .btn button{
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.btn button:hover{
+  transform: scale(0.95);
+}
+.fa-envelope{
+  color: #c71610;
+}
+.fa-linkedin{
+  color: #0072b1 ;
+}
+.fa-whatsapp{
+  color: #128C7E ;
+}
