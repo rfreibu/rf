@@ -3,31 +3,36 @@
 
 :root {
     --primary-text-color: #333;
-    --button-background: #f2f2f2;
+    --button-background: #f2f2f22b;
     --button-color: #333;
     --button-border-radius: 5px;
 }
 
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #fafafa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 10px; /* Prevents content from sticking to the viewport edges */
+  margin: 0;
+  padding: 0; /* No padding to take full viewport */
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-color: #f5f5f5; /* light grey background for slight contrast */
+  display: flex;
+  justify-content: flex-start; /* align to the top */
+  align-items: stretch; /* stretch to full height */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide scrollbars */
 }
-
 .card {
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: var(--primary-background);
+    border-radius: 0; /* No rounded corners */
+    box-shadow: none; /* No shadow since it fills the screen */
     padding: 20px;
-    border-radius: 10px;
-    background-color: #fff; /* A clean white background */
-    width: 100%; /* Makes the card expand horizontally */
-    max-width: 400px; /* Optimal width for mobile screens */
-    box-sizing: border-box;
+    width: 100%; /* take up 100% of the viewport width */
+    height: 100vh; /* height is 100% of the viewport height */
+    display: flex; /* using flexbox for inner elements */
+    flex-direction: column; /* stacking content vertically */
+    justify-content: center; /* center content vertically */
+    align-items: center; /* center content horizontally */
+    overflow: auto; /* Enable scroll if content overflows */
 }
 
 .profile-img img {
